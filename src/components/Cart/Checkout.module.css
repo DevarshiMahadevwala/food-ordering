@@ -1,0 +1,102 @@
+.form {
+    margin: 1rem 0;
+    height: 19rem;
+    overflow: auto;
+  }
+
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #61dafb;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #0b162b;
+    border-color: #61a2bf;
+  }
+  
+  .actions .button--alt {
+    color: #61dafb;
+  }
+  
+  .actions .button {
+    background-color: #0a212b;
+    color: #61dafb;
+  }
+  
+  .invalid label {
+    color: #ca3e51 !important;
+  }
+  
+  .invalid input {
+    border-color: #aa0b20 !important;
+    /* background-color: #ffeff1 !important; */
+  }
+
+  .login-box {
+    text-align: center;
+    width:50%;
+    margin: auto;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 15px 0 5px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -15px;
+    left: 0;
+    color: #03e9f4 !important;
+    font-size: 14px;
+  }
+
+  .login-box .user-box p{
+    color: #ca3e51;
+    margin:0 0 10px 0;
+    text-align: left;
+    font-size: small;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
